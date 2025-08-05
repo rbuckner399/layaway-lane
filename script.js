@@ -1,5 +1,5 @@
 function sayHi() {
-  alert("Boom! Welcome to Layaway Lane, baby! 🎉");
+  alert("BOOM! Welcome to Layaway Lane, where your wallet and your dreams can finally be friends! 🎉 We're like couples therapy but for you and your money!");
 }
 
 // Add to Layaway functionality
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const productName = productCard.querySelector('h3').textContent;
       const productPrice = productCard.querySelector('.price').textContent;
       
-      alert(`🛒 Great choice! ${productName} (${productPrice}) has been added to your layaway plan. You're one step closer to getting what you want! 🎉`);
+      alert(`🛒 OH YES! ${productName} (${productPrice}) is now reserved for you! Your future self is gonna be SO grateful! Time to start that payment plan and make your dreams come true, one payment at a time! 🎉💸`);
     });
   });
   
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thanks for reaching out! We\'ll get back to you soon. 📧');
+      alert('Thanks for reaching out! We got your message and we\'ll hit you back soon! In the meantime, go browse some more stuff you can\'t afford yet! 😂📧');
     });
   }
   
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     vendorForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const businessName = this.querySelector('input[placeholder="Business Name *"]').value;
-      alert(`🎉 Thank you ${businessName}! Your vendor application has been submitted. We'll review your application and get back to you within 24-48 hours. Welcome to the Layaway Lane family! 🤝`);
+      alert(`🎉 ¡Órale! Thank you ${businessName}! Your vendor application is in the system! We\'ll check it out and get back to you in 24-48 hours. Welcome to the Layaway Lane familia where everyone gets paid and everyone gets their stuff! 🤝💰`);
     });
   }
 });
