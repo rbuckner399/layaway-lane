@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     vendorForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const businessName = this.querySelector('input[placeholder="Business Name *"]').value;
-      alert(`🎉 ¡Órale! Thank you ${businessName}! Your vendor application is in the system! We\'ll check it out and get back to you in 24-48 hours. Welcome to the Layaway Lane familia where everyone gets paid and everyone gets their stuff! 🤝💰`);
+      alert(`🎉 Awesome! Thank you ${businessName}! Your vendor application is in the system! We'll check it out and get back to you in 24-48 hours. Welcome to the Layaway Lane family where everyone gets paid and everyone gets their stuff! 🤝💰`);
     });
   }
 });
