@@ -226,5 +226,38 @@
   </footer>
 
   <script src="../script.js"></script>
+  
+  <script>
+    let raised = 200;
+    const goal = 500;
+
+    function chipIn() {
+      if (raised >= goal) {
+        document.getElementById("message-area").innerText = "✅ Fully funded! Time to process that order!";
+        return;
+      }
+
+      raised += 25;
+      if (raised > goal) raised = goal;
+
+      document.getElementById("progress").innerText = `$${raised}`;
+      document.getElementById("bar-fill").style.width = `${(raised / goal) * 100}%`;
+
+      if (raised === goal) {
+        document.getElementById("message-area").innerText = "✅ Fully funded! Time to process that order!";
+      } else {
+        const messages = ["👏 Teamwork makes the dream work!", "🚀 You're getting there!", "💖 Every bit helps!", "🤑 Close to the goal!"];
+        const msg = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById("message-area").innerText = msg;
+      }
+    }
+
+    function shareLink() {
+      const link = "https://layaway-lane.com/contribute/fancy-sofa-deluxe";
+      navigator.clipboard.writeText(link).then(() => {
+        document.getElementById("message-area").innerText = "🔗 Link copied! Time to text the crew!";
+      });
+    }
+  </script>
 </body>
 </html>
